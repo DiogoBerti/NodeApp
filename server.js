@@ -6,7 +6,6 @@ const app = express();
 
 // Utilizado para funcionar como heroku
 const port = process.env.PORT || 3000;
-const name_to_fill = process.env.NAMETOFILL 
 
 hbs.registerPartials(__dirname + '/views/partials');
 // Chamando o handlebars para dentro do express...
@@ -47,7 +46,7 @@ hbs.registerHelper('screamIt', (text) => {
 app.get('/', (req, res) => {
 	res.render('home.hbs', {
 		pageTitle: 'Home Page Test',
-		welcomeMessage: name_to_fill
+		welcomeMessage: "Welcome to my WebPage"
 	});
 
 });
