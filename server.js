@@ -26,9 +26,9 @@ app.use((req, res, next) => {
 });
 
 // Middleware de manutenção, bloqueando todas as requisições e jogando para o site de manutenção..
-app.use((req, res, next)=>{
-	res.render('maintenance.hbs',{});
-});
+//app.use((req, res, next)=>{
+//	res.render('maintenance.hbs',{});
+//});
 
 // Utilizado para apresentar arquivos estaticos pelo server... Utilizando os arquivos da pasta public
 app.use(express.static(__dirname + '/public'));
