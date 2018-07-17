@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		{{> imports}}
 		<title>Home Page</title>
 	</head>
 	
@@ -9,6 +9,7 @@
 		<!-- Utilizando as chaves como templates, utilizando valores enviados pelo Node -->
 		<!-- Renderizando via partials.. -->
 		{{> header1}}
+		<br/>
 		<!-- Chamando o helper screamIt e passando welcomeMessage como argumento.. -->
 		<p>{{screamIt welcomeMessage}}</p>
 		

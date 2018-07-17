@@ -51,6 +51,14 @@ app.get('/', (req, res) => {
 
 });
 
+app.get('/projects', (req, res) => {
+	res.render('project.hbs', {
+		pageTitle: 'Projects Page',
+	});
+
+});
+
+
 app.get('/about', (req, res) =>{
 	// O Primeiro argumento do Render é a page, o segundo é o objeto que será enviado como valores para renderização
 	res.render('about.hbs', {
